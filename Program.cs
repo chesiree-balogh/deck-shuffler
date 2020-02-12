@@ -35,6 +35,12 @@ namespace deck_shuffler
           deck.Add(facename + " of " + suitname);
         }
       }
+      //this rights out the cards that have been assigned 
+      for (int deckIndex = 0; deckIndex < deck.Count; deckIndex++)
+      {
+        var card = deck[deckIndex];
+        Console.WriteLine($"{deckIndex} : {card}");
+      }
 
 
 
